@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class CustomAnimationView: AnimationView {
+final public class CustomAnimationView: AnimationView {
     
     var adjustmentBlock: ((_ info: AnimationView.LayoutInfo) -> AnimationView.LayoutInfo)?
     
