@@ -10,10 +10,10 @@ import Foundation
 
 final public class CustomAnimationView: AnimationView {
     
-    var adjustmentBlock: ((_ info: AnimationView.LayoutInfo) -> AnimationView.LayoutInfo)?
+    public var adjustmentBlock: ((_ info: AnimationView.LayoutInfo) -> AnimationView.LayoutInfo)?
     
     
-    override func adjustLayer(info: AnimationView.LayoutInfo) -> AnimationView.LayoutInfo {
+    public override func adjustLayer(info: AnimationView.LayoutInfo) -> AnimationView.LayoutInfo {
         return adjustmentBlock?(info) ?? super.adjustLayer(info: info)
     }
 }
